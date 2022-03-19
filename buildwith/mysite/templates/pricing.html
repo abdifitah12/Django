@@ -1,0 +1,12 @@
+ {% extends 'index.html' %} 
+{% block content %} 
+<h2>this is course number {{courses_obj}}</h2>
+ {{courses_obj.title}}
+ {%for section in sections%}
+ {{section.title}}
+ {%endfor%}
+ {%for lesson in lessons%}
+ {{lesson.title}}
+ {%endfor%}
+ 
+{% endblock %}

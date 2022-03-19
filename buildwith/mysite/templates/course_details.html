@@ -1,0 +1,7 @@
+{% extends 'index.html' %} 
+{% block content %} 
+<h2>this is my course details {{course_id}}</h2>
+{%for c in course%}
+<p>{{c.title}}</p>
+{% endfor % }
+{% endblock %}
